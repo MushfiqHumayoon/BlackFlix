@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CollectionViewCell" id="Q1F-Q7-SoI" customClass="CollectionViewCell" customModule="BlackFlix" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="211" height="279"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="46N-HL-EMO">
+                <rect key="frame" x="0.0" y="0.0" width="211" height="279"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lpr-RM-vLk">
+                        <rect key="frame" x="0.0" y="0.0" width="211" height="242.5"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Nf-Ho-a82">
+                        <rect key="frame" x="0.0" y="250.5" width="211" height="28.5"/>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="lpr-RM-vLk" secondAttribute="trailing" id="D1C-HL-TXQ"/>
+                    <constraint firstItem="8Nf-Ho-a82" firstAttribute="leading" secondItem="46N-HL-EMO" secondAttribute="leading" id="OP1-Dh-kc1"/>
+                    <constraint firstItem="lpr-RM-vLk" firstAttribute="leading" secondItem="46N-HL-EMO" secondAttribute="leading" id="Rkb-bn-FUq"/>
+                    <constraint firstAttribute="trailing" secondItem="8Nf-Ho-a82" secondAttribute="trailing" id="bFo-lm-g5a"/>
+                    <constraint firstAttribute="bottom" secondItem="8Nf-Ho-a82" secondAttribute="bottom" id="iTf-Ns-Keo"/>
+                    <constraint firstItem="lpr-RM-vLk" firstAttribute="top" secondItem="46N-HL-EMO" secondAttribute="top" id="l4q-03-Ule"/>
+                    <constraint firstItem="lpr-RM-vLk" firstAttribute="height" secondItem="46N-HL-EMO" secondAttribute="height" multiplier="0.87" id="lVn-HB-aus"/>
+                    <constraint firstItem="8Nf-Ho-a82" firstAttribute="top" secondItem="lpr-RM-vLk" secondAttribute="bottom" constant="8" id="rmi-J1-M9s"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="211" height="279"/>
+            <connections>
+                <outlet property="imageView" destination="lpr-RM-vLk" id="iZb-D5-Axa"/>
+                <outlet property="imageViewHeightConstraint" destination="lVn-HB-aus" id="lMP-vh-DJ3"/>
+                <outlet property="itemName" destination="8Nf-Ho-a82" id="Zoe-Rx-u4m"/>
+            </connections>
+            <point key="canvasLocation" x="229.71014492753625" y="-13.058035714285714"/>
+        </collectionViewCell>
+    </objects>
+</document>
